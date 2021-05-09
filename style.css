@@ -1,0 +1,139 @@
+body{
+    background-color: hsl(257, 40%, 49%);
+}
+.phone_background{
+    display: none;
+}
+.desktop_background{
+    position: absolute; 
+    bottom: 1px;
+    right: 70px;
+}
+
+.logo img{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+.illustration img{
+    position: absolute;
+    top: 190px;
+    left: 110px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; 
+    position: fixed;
+    left: 900px;
+    top: 275px;
+    text-align: justify;
+}
+
+.info h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.info p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.info button{
+    padding: 15px 50px;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: hsl(257, 40%, 49%);
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 700px;
+    left: 1230px;
+    cursor: pointer;
+}
+
+.social img{
+    max-width: 2.5em;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social img:hover{
+    background-color: hsl(300, 69%, 71%);
+    border-radius: 50%;
+    
+}
+
+
+@media all and (max-width: 375px){
+    body{
+        background-color: hsl(257, 40%, 49%);
+    } 
+    .desktop_background{
+        display: none;
+}
+
+    .phone_background{
+        display: block;
+        position: absolute;
+    }
+
+    .illustration img{
+        position: absolute;
+        height: 225px;
+        left: 30px;
+        top: 130px;
+    }
+      .info{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 10px;
+        top: 400px;
+    } 
+    
+    .info h1{
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        left: 20px;
+        bottom: 20px;
+    }
+    
+    .info p{
+        font-size: 15px;
+        position: relative;
+        bottom: 30px;
+        text-align: center;
+    }
+
+
+    .info button{
+       position: relative;
+       bottom: 50px;
+       left: 100px;
+    }
+    
+    .social{
+        position: fixed;
+        left: 200px;
+    }
+
+    .logo img{
+        height: 35px;
+        position: absolute;
+        bottom: 30px;
+    }
+} 
