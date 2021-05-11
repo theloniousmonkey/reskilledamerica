@@ -76,8 +76,8 @@ button:hover{
     
 }
 
-
-@media all and (max-width: 375px){
+ 
+@media only screen and (max-width: 600px){
     body{
         background-color: hsl(257, 40%, 49%);
     } 
@@ -136,4 +136,4 @@ button:hover{
         position: absolute;
         bottom: 30px;
     }
-} 
+}  
